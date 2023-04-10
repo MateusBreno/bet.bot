@@ -7,13 +7,9 @@
 
 <div align="center">
 	<h2> Idiomas | Languages </h2>
-	<a href="https://jdaniloc.github.io/Individual-Bet365Bot/pt/">
+	<a href="https://github.com/MateusBreno/bet.bot/pt/">
 		<img src="docs/images/br.png "
 		alt="Português" width="50" height="50" />
-	</a>
-	<a href="https://jdaniloc.github.io/Individual-Bet365Bot/en/">
-		<img src="docs/images/en.png "
-		alt="English" width="50" height="50"/>
 	</a>
 </div><br><br>
 
