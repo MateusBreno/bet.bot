@@ -3,7 +3,7 @@
 ![BetBot Video](./docs/images/video.gif)
 
 
-> Um automatizador de apostas para a plataforma Bet365. O objetivo foi de criar uma interface responsiva, mas que se comunique com o script python. Funciona até o Firefox 85.0.2 ([#10](https://github.com/JDaniloC/Individual-Bet365Bot/issues/10)) e as versões atuais do Chrome.
+> Um automatizador de apostas para a plataforma Bet365. O objetivo foi de criar uma interface responsiva, mas que se comunique com o script python. Funciona até o Firefox 85.0.2 ([#10]()) e as versões atuais do Chrome.
 
 <div align="center">
 	<h2> Idiomas | Languages </h2>
@@ -29,7 +29,7 @@ pip install -r requirements.txt
 2. Certifique-se que tem uma conta na [Bet 365](https://www.bet365.com/), e pegue o seu nome de usuário e senha.
 3. Certifique-se que tem o [Firefox](./src/widgets.py) instalado com o seu respectivo [Gecko Driver](https://www.take.net/blog/wp-content/cache/wp-rocket/take.net/blog/take-test/instalacao-geckodriver-driver-para-abrir-o-firefox-no-selenium/index-https.html_gzip) no caso de usar o FirefoxBrowser, ou use o ChromeBrowser no [bot.py](./src/bot.py) com o chromedriver.
 4. Crie uma conta no [MongoDB](https://medium.com/reprogramabr/conectando-no-banco-de-dados-cloud-mongodb-atlas-bca63399693f#:~:text=Acesse%20ao%20site%20do%20MongoDB,esquerdo%2C%20clique%20em%20Database%20Access.), um Cluster para criar uma Database chamada [betbot](./src/database.py) com uma Collection chamada users.
-5. Crie um arquivo na raiz do projeto chamado env.py com a [autenticação](https://docs.atlas.mongodb.com/tutorial/connect-to-your-cluster/) do seu Mongo, sem os <> ([#12](https://github.com/JDaniloC/Individual-Bet365Bot/issues/12)):
+5. Crie um arquivo na raiz do projeto chamado env.py com a [autenticação](https://docs.atlas.mongodb.com/tutorial/connect-to-your-cluster/) do seu Mongo, sem os <> ([#12]()):
 ```py
 autenticacao = "mongodb+srv://<USUARIOMONGO>:<SENHAMONGO>@cluster<CLUSTERID>.mongodb.net/betbot?retryWrites=true&w=majority"
 ```
