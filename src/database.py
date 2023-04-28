@@ -1,8 +1,11 @@
 from pymongo.database import Database
+from pymongo.mongo_client import MongoClient
 from pymongo.collection import Collection
-from pymongo import MongoClient
-import time
+# from pymongo import MongoClient
+# import time
 import hashlib
+
+uri = "mongodb+srv://mateusbreno:Palmeiras2021@cluster0.ijewqee.mongodb.net/?retryWrites=true&w=majority"
 
 users_schema = {
     "username": "",
@@ -32,11 +35,11 @@ class Mongo:
 
 
 # Conexão banco de dados
-client = MongoClient('autenticacao')
+client = MongoClient(uri)
 db = client['betbot']
 collection = db['users'] 
 
 MongoDB = Mongo(db, collection)
 
 # Nome do usuário da conta da Bet e sua senha
-# MongoDB.cadastrar("devbreno", "Palmeiras@2021")
+# MongoDB.cadastrar("devbreno", "Palmeiras2021")

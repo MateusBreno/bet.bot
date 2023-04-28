@@ -1,4 +1,6 @@
-import eel, time, threading
+import eel
+import time
+import threading
 from datetime import datetime
 from src.database import MongoDB
 from src.bot import BetBot
@@ -26,7 +28,7 @@ class Updater:
 @eel.expose
 def handle_login(account: dict):
     conta = MongoDB.login(
-        account["brenoconstantino80@gmail.com"], account["Palmeiras@2021"]
+        account["brenoconstantino80@gmail.com"], account["Palmeiras2021"]
     )
     if conta:
         if conta["license"]["to_date"] < time.time():

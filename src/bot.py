@@ -1,5 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from src.widgets import *
+import time
+import re
 
 
 class BetBot:
